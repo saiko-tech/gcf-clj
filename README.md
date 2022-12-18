@@ -1,6 +1,7 @@
 # gcf-clj
 
-Clojure on JVM on Google Cloud Functions
+Clojure on JVM on Google Cloud Functions.<br>
+This project adds a class loader fix to be able to run Clojure on GCP Cloud Functions.
 
 [![Clojars Project](https://img.shields.io/clojars/v/org.clojars.markus-wa/gcf-clj.svg)](https://clojars.org/org.clojars.markus-wa/gcf-clj)
 
@@ -30,3 +31,7 @@ $ gcloud functions deploy my-function \
         --set-env-vars "GCF_CLOJURE_FN=my-fn" \
         --source dir-containing-uberjar
 ```
+
+## Acknowledgements
+
+Thanks to https://sparkofreason.github.io/jvm-clojure-google-cloud-function/ for providing the solution approach
