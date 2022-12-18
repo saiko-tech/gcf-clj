@@ -1,7 +1,7 @@
 # gcf-clj
 
 Clojure on JVM on Google Cloud Functions.<br>
-This project adds a class loader fix to be able to run Clojure on GCP Cloud Functions.
+This project implements a class loader fix to be able to run Clojure on GCP Cloud Functions.
 
 [![Clojars Project](https://img.shields.io/clojars/v/org.clojars.markus-wa/gcf-clj.svg)](https://clojars.org/org.clojars.markus-wa/gcf-clj)
 
