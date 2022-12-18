@@ -1,0 +1,46 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group 'com.saiko_tech'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation (
+            'org.clojure:clojure:1.10.3',
+            'com.google.cloud.functions:functions-framework-api:1.0.4'
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'org.clojars.markus-wa'
+            artifactId = 'gcf-clj'
+            version = '0.0.1'
+
+            from components.java
+        }
+    }
+
+    repositories {
+        maven {
+            name = "Clojars"
+            url = "https://clojars.org/repo"
+
+            credentials {
+                username = 'markus-wa'
+                password = 'REDACTED'
+            }
+        }
+    }
+}
