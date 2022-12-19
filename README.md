@@ -23,7 +23,7 @@ org.clojars.markus-wa/gcf-clj {:mvn/version "0.0.1"}
 $ gcloud functions deploy my-function \
         --gen2 \
         --runtime java17 \
-        --entry-point com.saiko_tech.gcf_clj.ClojureCloudEventFunction \
+        --entry-point com.saiko_tech.gcf_clj.ClojureCloudFunction \
         --trigger-topic my-topic \
         --region europe-north1 \
         --memory 2Gi \
